@@ -21,7 +21,8 @@ var carDetails = {
   Use object destructuring to save the property values from the object carDetails into new variables. 
 */
 
-//Code Here
+const {color = 'blue', make = 'bmw', model = '3 series', year = '2005'} = carDetails; 
+
 
 
 
@@ -33,7 +34,7 @@ var carDetails = {
   The property names are firstName, lastName, and title.
 */
 
-function greeting( obj ) {
+function greeting( {firstName, lastName, title} ) {
   //Code Here
   
   // Do not edit the code below.
