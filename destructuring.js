@@ -54,7 +54,10 @@ function greeting( {firstName, lastName, title} ) {
   Sum up the values and return the total number.
 */
 
-//Code Here
+function totalPopulation({utah : Lehi, california: LA, texas: Austin, arizona: Phoenix})
+{
+  return (Lehi + LA + Austin + Phoenix)
+}
 
 
 
@@ -68,7 +71,13 @@ function greeting( {firstName, lastName, title} ) {
   Push these new variables to an array and return the array. 
 */
 
-//Code Here
+function ingredients (obj)
+{
+  let {carb, fat, protein} = obj; 
+let arr = []; 
+ arr.push(carb, fat, protein); 
+  return arr; 
+}
 
 
 
@@ -86,7 +95,10 @@ function greeting( {firstName, lastName, title} ) {
   Find the smallest number of the three and return that number.
 */
 
-//Code Here
+function largeNumbers ({first, second, third})
+{
+ return Math.min(first, second, third); 
+}
 
 
 
@@ -98,6 +110,18 @@ function greeting( {firstName, lastName, title} ) {
   Find the longest array and return that array.
 */
 
-//Code Here
-
+function numberGroups({a, b, c})
+{
+  if (Math.max(a.length, b.length, c.length) === a.length)
+  {
+    return a; 
+  } 
+  else if (Math.max(a.length, b.length, c.length) === b.length)
+  {
+    return b; 
+  }   
+  else{
+    return c; 
+  }
+}
 
